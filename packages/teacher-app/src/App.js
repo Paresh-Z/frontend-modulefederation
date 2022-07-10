@@ -49,7 +49,23 @@ function App() {
   const Profile = React.lazy(() => import("profile/Profile"));
   const AttendanceReport = React.lazy(() => import("profile/AttendanceReport"));
 
+  // const SingleLessonPlanDetails = React.lazy(() => import("/lessons/SingleLessonPlan"));
+  // const LessonPlansDetails = React.lazy(() => import("/lessons/LessonPlansDetails"));
+  // const Lessonplans = React.lazy(() => import("/lessons/Lessonplans"));
+
   const routes = [
+    // {
+    //   path: "/worksheet/lessons",
+    //   component: LessonPlansDetails,
+    // },
+    // {
+    //   path: "/worksheet/lessons/list",
+    //   component: Lessonplans,
+    // },
+    // {
+    //   path: "/worksheet/lesson/:id",
+    //   component: SingleLessonPlanDetails,
+    // },
     {
       path: "/worksheet/list/:state",
       component: Worksheet,

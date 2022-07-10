@@ -14,6 +14,8 @@ module.exports = {
     students: `students@[window.appModules.students.url]/moduleEntry.js`,
     notification: `notification@[window.appModules.notification.url]/moduleEntry.js`,
     profile: `profile@[window.appModules.profile.url]/moduleEntry.js`,
+    assessment: `assessment@[window.appModules.assessment.url]/moduleEntry.js`,
+    lessons: `lessons@[window.appModules.lessons.url]/moduleEntry.js`
   },
   filename: "moduleEntry.js",
   shared: {

@@ -92,8 +92,8 @@ export default function Worksheet({ footerLinks, appName }) {
   React.useEffect(async () => {
     let params = state
       ? {
-          state: { eq: state },
-        }
+        state: { eq: state },
+      }
       : {};
 
     const arr = Object.keys(filterObject);
@@ -113,10 +113,11 @@ export default function Worksheet({ footerLinks, appName }) {
     } else {
       filterData = data.filter((e) => e.name);
     }
+    console.log("FilterData", filterData);
     setWorksheets(filterData);
     setLoading(false);
   }, [filterObject, search.length >= 3, searchState]);
-
+  console.log(filterObject);
   if (loading) {
     return <Loading />;
   }

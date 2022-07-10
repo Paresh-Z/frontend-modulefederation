@@ -34,6 +34,7 @@ export default function WorksheetQuestionBank({ footerLinks, appName }) {
   const [comments, setCommets] = React.useState([]);
 
   React.useEffect(async () => {
+    console.log("id", id);
     const worksheetData = await worksheetRegistryService.getOne({ id });
     const questionIds =
       worksheetData && Array.isArray(worksheetData.questions)
